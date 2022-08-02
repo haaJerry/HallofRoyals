@@ -1,0 +1,112 @@
+
+.modal {
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -50vw;
+    left: 50%;
+    z-index: 9999;
+    will-change: opacity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-backdrop.show {
+    opacity: .5;
+    top: 0px;
+    pointer-events: auto;
+}
+.modal-dialog {
+    transform: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background-color: #1a1e21;
+    position: relative;
+    width: 420px;
+    display: grid;
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 0;
+    max-height: 100%;
+  
+}
+.modal-header {
+    background: linear-gradient(87.84deg,#1a1e21 -18.45%,#22272a 72.37%);
+    font-family: Public Sans,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    min-height: 78px;
+    padding: 15px 35px;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+.modal-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    width: 100%; 
+}
+.s-card-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    width: 100%; 
+}
+.s-provider-wrapper {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 0;
+}
+.s-provider-container {
+    transition: background-color .2s ease-in-out;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 24px 16px;
+}
+.si-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    overflow: visible;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+}
+.si-icon img {
+    width: 100%;
+    height: 100%;
+}
+.si-name {
+    font-family: Public Sans,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #e3ebfb;
+    text-align: center;
+    margin-top: 10px;
+}

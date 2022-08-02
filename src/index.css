@@ -1,0 +1,26 @@
+ /*.App{
+  font-family: Offside,cursive,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #747e88;
+    overflow-x: hidden;
+    background-color: #080707;
+
+}
+*/
+
+* {
+  outline: none!important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+user agent stylesheet
+.header {
+  display: block;
+}
